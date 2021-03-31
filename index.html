@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./public/index.css" rel="stylesheet" type="text/css"> 
+    <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="header_div-h1">
+            <h1 class="header_h1">Banner header</h1>
+        </div>
+            
+        <div class="header_div-p">   
+            <p class="header_p">Lorem ipsum dolor stamet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                Ut enim ad minim veniam, quis nostrud</p>
+        </div>       
+        
+        <form class="form" novalidate onsubmit="validateForm (); return false;">
+            <div class="form_container-elem">
+                <h3 class="form_heading">Request form</h3>
+            </div>
+            
+            <div class="form_container-elem">
+                <input type="email" id="email" class="form_elem">
+                <button class="form_input-delete" onclick="document.getElementById('email').value='';">&#10006;</button>
+                <label for="email" class="form_label-input">Enter your E-Mail</label>                  
+                <div class="form_email-error hidden" id="emailError">
+                    <p>Error correct E-Mail</p>
+                </div>
+            </div>
+            <div class="form_container-elem">
+                <input type="text" id="userName" class="form_elem">
+                <button class="form_input-delete" onclick="document.getElementById('userName').value='';">&#10006;</button>
+                <label for="userName" class="form_label-input">Enter your Name</label>
+                <div class="form_email-error hidden" id="nameError">
+                    <p class="form_p-error">Error correct Name</p>
+                </div>
+            </div>                
+            <div class="form_container-elem">
+                <select id="selectCountry" class="form_elem form_select">                       
+                    <option value="Select your country">Select your country</option>
+                    <option value="Russia">Russia</option>
+                </select>
+            </div>
+            <div class="form_container-elem">
+                <input type="checkbox" id="form_checkbox" class="form_checkbox">
+                <label for="form_checkbox" class="form_label">I agree with Terms & Conditions</label>
+            </div>
+            <div class="form_submit">
+                <input type="submit" class="form_submit-input">
+                <a class="form_submit-a">Hyperlink</a>
+            </div>                
+        </form> 
+    </header>
+    <main class="main">        
+        <div class="main_elem1">
+            <div class="main_elem-inside">
+                <img class="main_icon" src="images/main/icon.png">
+                <h3 class="main_h3">Post header 1</h3>
+                <p class="main_p">Lorem ipsum dolor stamet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>                
+            </div>
+            
+        </div>
+        <div class="main_elem2">
+            <div class="main_elem-inside">
+                <img class="main_icon" src="images/main/icon.png">
+                <h3 class="main_h3">Post header 2</h3>
+                <p class="main_p">Lorem ipsum dolor stamet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> 
+            </div>
+        </div>
+        <div class="main_elem3">
+            <div class="main_elem-inside">
+                <img class="main_icon" src="images/main/icon.png">
+                <h3 class="main_h3">Post header 3</h3>
+                <p class="main_p">Lorem ipsum dolor stamet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> 
+            </div>
+        </div> 
+        <div class="main_elem4">
+            <div class="main_elem-inside">
+                <img class="main_icon" src="images/main/icon.png">
+                <h3 class="main_h3">Post header 4</h3>
+                <p class="main_p">Lorem ipsum dolor stamet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> 
+            </div>
+        </div>
+        <div class="main_elem5">
+            <div class="main_elem-inside">
+                <img class="main_icon" src="images/main/icon.png">
+                <h3 class="main_h3">Post header 5</h3>
+                <p class="main_p">Lorem ipsum dolor stamet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p> 
+            </div>
+        </div>        
+    </main>
+    <section class="section">
+        <img src="images/section/image.png">
+        <div class="section_text">
+            <h2 class="section_h2">Title text</h2>        
+            <ol class="section_ol">
+                <li class="section_li"><a href="" onclick="toggleWindow(true); return false;" class="section_link">Duis aute irure dolor in reprehenderit<sup>1</sup> in voluptate velit</a></li>
+                <hr>                
+                <li><a href="" onclick="toggleWindow(true); return false;" class="section_link">Ullamco laboris nisi ut aliquip ex ea commodo consequat</a></li>
+                <hr>
+                <li><a href="" onclick="toggleWindow(true); return false;" class="section_link">Ut enim ad mimim veniam, quis nostrud exercitation</a></li>
+                <hr>
+                <li><a href="" onclick="toggleWindow(true); return false;" class="section_link">Et dolore magna aliqua</a></li>
+                <hr>
+                <li><a href="" onclick="toggleWindow(true); return false;" class="section_link">Sed do eiusmod tempor<sup>2</sup> incididunt ut labore</a></li>
+                <hr>
+                <li><a href="" onclick="toggleWindow(true); return false;" class="section_link">Lorem ipsum dolor sit amet<sup>3</sup> consectetur adipisicing elit</a></li>        
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_elem">
+            <ul class="footer_ul">
+                <li>
+                    <sup>1</sup>Reprehenderit - Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore
+                </li>
+                <li>
+                    <sup>2</sup>Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li>
+                    <sup>3</sup>Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </li>
+            </ul>            
+        </div>
+    </footer>
+    <div id="modal" >
+        <h3 class="modal_h3">External link</h3>
+        <button class="modal_button-delete" onclick="toggleWindow(false);">&#10006;</button>
+        <p class="modal_p">Lorem ipsum dolor stamet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        <div class="modal_conteiner-button">
+            <button class="modal_button-cancel">Cancel</button>
+            <button class="modal_button-accept">Accept</button>
+        </div>
+        
+    </div>   
+    <script src="index.js"></script>
+</body>
+</html>
